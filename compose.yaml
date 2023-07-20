@@ -1,0 +1,13 @@
+services:
+  ruby:
+    image: ruby:latest
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src:/src
+  go:
+    image: golang:latest
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src:/src
